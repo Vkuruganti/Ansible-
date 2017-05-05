@@ -1,0 +1,5 @@
+---
+- hosts: windows_hosts
+
+  tasks:
+    - win_reboot:
