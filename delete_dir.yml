@@ -1,0 +1,8 @@
+---
+
+- name: delete the following directories
+  hosts: test_nodes
+
+  tasks:
+    - name: delete the directory
+      file: path=/etc/ansible/test state=absent
