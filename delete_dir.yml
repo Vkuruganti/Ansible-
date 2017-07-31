@@ -1,4 +1,5 @@
 ---
+# Ansible playbook to delete the given file/directory
 
 - name: delete the following directories
   hosts: test_nodes
