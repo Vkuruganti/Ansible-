@@ -1,0 +1,9 @@
+---
+- name: move files on servers
+  hosts: servers
+
+  tasks:
+    - name: move the archived file
+      copy:
+        src: //    # put the source location here on management node
+        dest: // # put the destination here on remote node
