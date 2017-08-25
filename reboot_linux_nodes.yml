@@ -1,0 +1,7 @@
+---
+- name: reboot the linux nodes
+  hosts: test_nodes
+
+  tasks:
+    - name: reboot the node
+      command: /sbin/reboot
