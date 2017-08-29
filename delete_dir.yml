@@ -6,4 +6,4 @@
 
   tasks:
     - name: delete the directory
-      file: path=/etc/ansible/test state=absent
+      file: path=/etc/ansible/test state=absent state=absent
