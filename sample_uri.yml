@@ -1,5 +1,5 @@
 ---
-- hosts: l1_test
+- hosts: l_nodes
   tasks:
     - win_uri:
         url: https://www.google.com
