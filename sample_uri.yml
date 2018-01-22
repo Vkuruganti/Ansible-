@@ -1,0 +1,19 @@
+---
+- hosts: l1_test
+  tasks:
+    - win_uri:
+        url: https://www.google.com
+        method: GET
+        user: user_name
+        password: password
+        force_basic_auth: yes
+        status_code: 200
+
+
+#status_code: 302
+#headers:
+#  Content-Type: "application/x-www"
+#register: login
+
+#    - fail:
+#      when: "'User Name' not in webpage content"
