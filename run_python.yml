@@ -1,0 +1,11 @@
+---
+- name: ansible playbook to test python shell commands on cloudbolt linux servers
+  hosts: linux_nodes
+
+  tasks:
+    - name: change the working directory
+      shell: cd /opt/cloudbolt/
+
+    - name: open the python shell
+      command: /opt/cloudbolt/manage.py shell_plus
+#      shell: './opt/cloudbolt/manage.py shell_plus'
