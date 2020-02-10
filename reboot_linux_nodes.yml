@@ -1,6 +1,6 @@
 ---
 - name: reboot the linux nodes
-  hosts: test_nodes
+  hosts: all
 
   tasks:
     - name: reboot the node
