@@ -4,4 +4,4 @@
 
   tasks:
     - name: reboot the node
-      command: /sbin/reboot
+      reboot:
