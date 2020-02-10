@@ -8,4 +8,4 @@
     - name: collect all facts
       setup:
     - name: ping all nodes
-      command: ping
+      ping:
