@@ -8,7 +8,7 @@
   tasks:
     - name: collect all facts
       setup:
-    - debug: var=hostvars[inventory_hostname]['ansible_enp0s3']['ipv4']['address']
+    - debug: var=ansible_hostname
     
     
     - name: ping all nodes
