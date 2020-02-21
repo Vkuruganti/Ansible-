@@ -11,7 +11,7 @@
     - debug: var=ansible_hostname
     
     - name: Retrieve all tags on an instance
-      ec2_instance_facts:
+      ec2_instance_info:
     
     - name: ping all nodes
       ping:
