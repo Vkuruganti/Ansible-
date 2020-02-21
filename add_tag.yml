@@ -11,7 +11,7 @@
     - debug: var=ansible_hostname
     
     - name: Retrieve all tags on an instance
-      ec2_tag::
+      ec2_tag:
         state: list
       register: ec2_tags
     
