@@ -15,7 +15,7 @@
    
     - name: send slack notification via slack
       slack:
-        token: T5SK51LTG/BPGGJU5HC/UeKvgE50XvKyznhU2P2BwM65
+        token: 
         msg: '{{ inventory_hostname }} completed'
     
     - name: ping all nodes
