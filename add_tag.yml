@@ -13,10 +13,10 @@
    # - name: Retrieve all tags on an instance
    #   ec2_instance_info:
    
-    - name: send slack notification via slack
-      slack:
-        token: 
-        msg: '{{ inventory_hostname }} completed'
+   # - name: send slack notification via slack
+   #   slack:
+   #     token: 
+   #     msg: '{{ inventory_hostname }} completed'
     
     - name: ping all nodes
       ping:
