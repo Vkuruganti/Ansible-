@@ -10,8 +10,13 @@
       setup:
     - debug: var=ansible_hostname
     
-    - name: Retrieve all tags on an instance
-      ec2_instance_info:
+   # - name: Retrieve all tags on an instance
+   #   ec2_instance_info:
+   
+    - name: send slack notification via slack
+      slack:
+        token: xoxp-196651054934-753456102340-774538416997-0f738e8780158b5cdf3b31e5ce3ecffc
+        msg: '{{ inventory_hostname }} completed'
     
     - name: ping all nodes
       ping:
